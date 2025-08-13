@@ -23,30 +23,22 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setStatus("Sending...");
-  try {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+    e.preventDefault();
+    setStatus("Sending...");
+    try {
+      const res = await axios.post("http://localhost:5000/contact", {
         name: form.name,
         email: form.email,
         subject: form.subject,
         message: form.message,
-      }),
-    });
+      });
 
-    const data = await res.json();
-
-    if (!res.ok) throw new Error(data.error || "Error sending message");
-
-    setStatus(data.message);
-    setForm({ name: "", email: "", subject: "", message: "" });
-  } catch (error) {
-    setStatus(error.message || "Error sending message");
-  }
-};
+      setStatus(res.data.message);
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      setStatus(error.response?.data?.error || "Error sending message");
+    }
+  };
 
   return (
     <section
