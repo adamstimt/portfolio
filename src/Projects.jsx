@@ -64,22 +64,22 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#11284b] sm:h-[89vh] h-[76vh] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300 flex flex-col"
+            className="bg-[#11284b] sm:h-[89vh] h-[86vh] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300 flex flex-col"
           >
             {/* Image */}
             <img
               src={project.image}
               alt={project.title}
-              className="mx-auto w-[97%] h-auto max-h-[610vw] sm:max-h-72 md:max-h-[380px] lg:h-[370px] object-cover rounded-xl mt-2 sm:h-[350px]"
+              className="mx-auto w-[97%] h-[300px] max-h-[610vw] sm:max-h-72 md:max-h-[380px] lg:h-[370px] object-cover rounded-xl mt-2 sm:h-[350px]"
             />
 
             {/* Content */}
             <div className="p-4 sm:p-6 flex flex-col flex-grow justify-between">
               <div>
-                <h3 className="text-3xl sm:text-2xl md:text-3xl font-medium underline mb-3">
+                <h3 className="text-2xl sm:text-2xl md:text-3xl font-medium underline mb-3">
                   {project.title}
                 </h3>
-                <p className="text-2xl mt-6 sm:text-[17px] sm:font-normal  md:text-lg lg:text-[24px] leading-loose">
+                <p className="text-xl mt-6 sm:text-[17px] sm:font-normal  md:text-lg lg:text-[24px] leading-loose">
                   {project.description}
                 </p>
               </div>

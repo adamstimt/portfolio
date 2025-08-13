@@ -62,9 +62,9 @@ const Contact = () => {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 w-full">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 w-full ">
           {/* Contact Info */}
-          <div className="p-6 sm:p-8 border-2 border-purple-300 rounded-lg shadow-lg w-full">
+          <div className="p-6 sm:p-8 border-2 border-purple-300 rounded-lg shadow-lg w-[97%]">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
               Contact Information
             </h3>
@@ -74,7 +74,7 @@ const Contact = () => {
 
             {/* Email */}
             <div className="flex items-center gap-4 mb-6">
-              <FaEnvelope className="bg-gradient-to-r from-purple-400 to-blue-500 text-white text-4xl sm:text-5xl p-3 rounded-full animate-bounce" />
+              <FaEnvelope className="bg-gradient-to-r from-purple-400 to-blue-500 text-white   sm:text-5xl p-3 rounded-full animate-bounce" />
               <span className="text-white text-lg sm:text-xl break-words">
                 adamtimtaoucine@gmail.com
               </span>
@@ -121,8 +121,8 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="p-6 sm:p-8 border-2 border-purple-300 rounded-lg shadow-lg w-full">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+          <div className="p-6 sm:p-8 border-2 border-purple-300 rounded-lg shadow-lg w-[97%]">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 ">
               Send Me a Message
             </h3>
             <p className="text-white text-base sm:text-lg mb-8">
