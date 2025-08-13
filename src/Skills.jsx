@@ -21,11 +21,11 @@ const Skills = () => {
       {/* Title */}
      <h1
   className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-[poppins] mb-8 text-center relative inline-block mx-auto drop-shadow-md
-  before:content-[''] before:absolute before:w-[50%] before:sm:w-full before:md:w-full before:lg:w-[65vh] before:h-[2px] 
+  before:content-[''] before:absolute  before:lg:w-[65vh] before:h-[2px] 
   before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 
   before:right-full before:top-1/2 before:mr-2 md:before:mr-4
 
-  after:content-[''] after:absolute after:w-[48%] after:sm:w-[89%] after:md:w-full after:lg:w-[65vh] after:h-[2px] 
+  after:content-[''] after:absolute  after:lg:w-[65vh] after:h-[2px] 
   after:bg-gradient-to-r after:from-purple-500 after:to-blue-500 
   after:left-full after:top-1/2 after:ml-2 md:after:ml-4 "
 >
